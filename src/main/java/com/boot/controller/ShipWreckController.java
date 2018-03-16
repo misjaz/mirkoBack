@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/")
+@RequestMapping("/api/v1")
 public class ShipWreckController {
 
-    @RequestMapping(value = "shipwrecks", method = RequestMethod.GET)
-    public int get() {
+    @RequestMapping(value = "/shipwrecks", method = RequestMethod.GET)
+    public int getTTT() {
         return 666;
     }
 }
