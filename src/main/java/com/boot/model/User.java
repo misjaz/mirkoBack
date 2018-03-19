@@ -1,6 +1,12 @@
 package com.boot.model;
 
-import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class User {
@@ -10,6 +16,7 @@ public class User {
     private Integer id;
     private String name;
     private String email;
+    private String password;
 
     public Integer getId() {
         return id;
@@ -33,6 +40,18 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @JsonIgnore
+    public String getPassword()
+    {
+        return password;
+    }
+
+    @JsonProperty
+    public void setPassword(String password)
+    {
+        this.password = password;
     }
 
 
