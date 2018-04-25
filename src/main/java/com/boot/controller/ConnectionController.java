@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/connection")
-public class ShipWreckController {
+public class ConnectionController {
 
     @RequestMapping(method = RequestMethod.GET)
     public int getTTT() {

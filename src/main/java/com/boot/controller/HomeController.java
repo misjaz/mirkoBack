@@ -9,7 +9,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String home() {
-        return "Das Boot, reporting for duty";
+        return "Sto ima";
     }
 
 }
