@@ -8,13 +8,13 @@ CREATE TABLE IF NOT EXISTS `company` (
 );
 
 CREATE TABLE IF NOT EXISTS `user`(
-  `user_id` INT AUTO_INCREMENT,
+  `id` INT AUTO_INCREMENT,
   `name`VARCHAR(255),
   `email` VARCHAR(2000),
   `company_id` INT,
   `state` VARCHAR(50),
   `city` VARCHAR(50),
-  PRIMARY KEY (`user_id`),
+  PRIMARY KEY (`id`),
   FOREIGN KEY (`company_id`) REFERENCES company(`company_id`)
 );
 

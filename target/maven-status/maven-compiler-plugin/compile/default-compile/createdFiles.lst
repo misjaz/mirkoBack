@@ -1,5 +1,4 @@
 com/boot/controller/UserController.class
-com/boot/controller/ShipWreckController.class
 com/boot/model/User.class
 com/boot/repository/UserRepository.class
 com/boot/controller/HomeController.class
