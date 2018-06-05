@@ -10,18 +10,16 @@ public class Company {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer company_id;
+    private Integer id;
     private String name;
     private String state;
     private String city;
 
-    public Integer getCompany_id() {
-        return company_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setCompany_idy_id(Integer company_id) {
-        this.company_id = company_id;
-    }
+    public void setId(Integer id) { this.id = id; }
 
     public String getName() {
         return name;
